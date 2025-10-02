@@ -34,42 +34,6 @@ export function Header() {
   // Estado para controlar a aparição do menu
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Se menu for true, mostra o menu
-  if (menuOpen) {
-    return (
-      // Container menu
-      <div className="inset-0 fixed bg-verde-escuro flex flex-col gap-4 items-center justify-center">
-        {/* Título/Logo */}
-        <h1 className="font-bold text-3xl">LOGO</h1>
-        {/* Ul */}
-        <ul className="flex flex-col gap-4 text-center">
-          {/* Redenriza os links com map */}
-          {menuLinks.map((link) => {
-            return (
-              <li key={link.label}>
-                {/* Mudar para to após instalar o react-scroll */}
-                <Link
-                  href={link.label}
-                  onClick={() => setMenuOpen(!menuOpen)}
-                  className="underline font-bold text-white hover:text-black transition-all duration-500"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        {/* Botão de fechar menu */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="rounded-full px-4 py-2 border-2 text-2xl font-bold"
-        >
-          X
-        </button>
-      </div>
-    );
-  }
-
   return (
     // Header
     <header>
@@ -103,9 +67,44 @@ export function Header() {
           }}
           className="md:hidden"
         >
-          Icon
+          Menu
         </button>
       </nav>
+
+      <div
+        className={`bg-verde-escuro flex flex-col gap-4 items-center justify-center fixed inset-0 ${
+          menuOpen ? "translate-x-0" : "translate-x-[100%]"
+        } transition-all duration-500`}
+      >
+        {/* Título/Logo */}
+        <h1 className="font-bold text-3xl text-white">LOGO</h1>
+        {/* Ul */}
+        <ul className="flex flex-col gap-4 text-center">
+          {/* Redenriza os links com map */}
+          {menuLinks.map((link) => {
+            return (
+              <li key={link.label}>
+                {/* Mudar para to após instalar o react-scroll */}
+                <Link
+                  href={link.label}
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  className="underline font-bold text-white hover:text-black transition-all duration-500"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        {/* Botão de fechar menu */}
+        <button
+          title="Fechar menu"
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="rounded-full px-3 py-1 border-2 text-lg font-bold text-white"
+        >
+          X
+        </button>
+      </div>
     </header>
   );
 }
