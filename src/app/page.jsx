@@ -1,10 +1,22 @@
+// Importa o Scrool
+
+// Importa os componetes
+import { Hero } from "@/components/Hero";
+
+// Página Completa com seções/componentes
 export default function Page() {
   return (
-    <h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-      voluptatibus dolorum ipsa assumenda eveniet? Dolorum harum iste, maxime,
-      perspiciatis libero officiis modi quos facere, nam vitae dolorem. Ipsum,
-      enim suscipit!
-    </h1>
+    <div className="min-h-screen bg-black">
+      {/* Header */}
+
+      {/* Hero */}
+      <Hero />
+
+      {/* Sobre */}
+
+      {/* Projetos */}
+
+      {/* Footer */}
+    </div>
   );
 }
