@@ -1,26 +1,51 @@
+/* Importa Tailwind */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Fontes Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/font-poppins/Poppins-Regular.ttf");
+  font-weight: 400;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/font-poppins/Poppins-Bold.ttf");
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Variáveis */
+@theme {
+  /* Cores principais */
+  --color-preto: #0a0a0a;
+  --color-branco: #ffffff;
+  --color-verde-padrao: #a7e9ab;
+  --color-verde-escuro: #2e7d32;
+  --color-verde-suave: #dff5e1;
+
+  /* Neutros */
+  --color-cinza-escuro: #2c2c2c;
+  --color-cinza-medio: #6e6e6e;
+  --color-cinza-claro: #f5f5f5;
+
+  /* Destaques */
+  --color-azul: #1e88e5;
+  --color-amarelo: #ffca28;
+  --color-laranja: #fb8c00;
+
+  /* Fontes */
+  --font-poppins: "Poppins", sans-serif;
 }
 
+/* Body */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong,
+b {
+  font-weight: 700;
 }
