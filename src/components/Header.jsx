@@ -88,7 +88,7 @@ export function Header() {
                 <Link
                   href={link.label}
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="underline font-bold text-white hover:text-black transition-all duration-500"
+                  className="underline text-lg font-bold text-white hover:text-black transition-all duration-500"
                 >
                   {link.label}
                 </Link>
@@ -100,7 +100,7 @@ export function Header() {
         <button
           title="Fechar menu"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="rounded-full px-3 py-1 border-2 text-lg font-bold text-white"
+          className="cursor-pointer rounded-full px-3 py-1 border-2 text-lg font-bold text-white"
         >
           X
         </button>
