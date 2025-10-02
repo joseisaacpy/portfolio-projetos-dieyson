@@ -3,6 +3,7 @@
 // Importa os componetes
 import { Hero } from "@/components/Hero";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 // Página Completa com seções/componentes
 export default function Page() {
@@ -19,6 +20,7 @@ export default function Page() {
       {/* Projetos */}
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 }
