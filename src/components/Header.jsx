@@ -5,6 +5,7 @@ import { useState } from "react";
 
 // Importa image
 import Image from "next/image";
+
 // Importa imagem da logo
 import elementoLogo from "../../public/images/elemento-logo-sem-fundo.png";
 
@@ -13,6 +14,7 @@ import { Link } from "react-scroll";
 
 // Importa icon
 import { HiMenuAlt1 } from "react-icons/hi";
+import { IoMdCloseCircle } from "react-icons/io";
 
 export function Header() {
   // Armazena os links e seu redirecionamento
@@ -49,7 +51,7 @@ export function Header() {
             src={elementoLogo}
             alt="Logo"
             width={70}
-            className="cursor-pointer"
+            className="cursor-pointer simple-hover"
           />
         </Link>
         {/* Ul */}
@@ -77,7 +79,7 @@ export function Header() {
           title="Abrir menu"
           className="md:hidden"
         >
-          <HiMenuAlt1 className="text-white text-2xl cursor-pointer" />
+          <HiMenuAlt1 className="text-white text-2xl cursor-pointer simple-hover" />
         </button>
       </nav>
 
@@ -91,7 +93,7 @@ export function Header() {
           src={elementoLogo}
           alt="Logo"
           width={100}
-          className="cursor-pointer"
+          className="cursor-pointer simple-hover"
         />
 
         {/* Ul */}
@@ -115,9 +117,9 @@ export function Header() {
         <button
           title="Fechar menu"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="cursor-pointer rounded-full px-3 py-1 border-2 text-lg font-bold text-white"
+          className="cursor-pointer simple-hover"
         >
-          X
+          <IoMdCloseCircle className="text-white text-3xl" />
         </button>
       </div>
     </header>
