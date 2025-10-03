@@ -1,4 +1,7 @@
-// Importa o Scrool
+"use client";
+
+// Importa Element do Scrool
+import { Element } from "react-scroll";
 
 // Importa os componetes
 import { Hero } from "@/components/Hero";
@@ -10,14 +13,20 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
-      <Header />
+      <Element name="header">
+        <Header />
+      </Element>
 
       {/* Hero */}
-      <Hero />
+      <Element name="home">
+        <Hero />
+      </Element>
 
       {/* Sobre */}
+      <Element name="sobre"></Element>
 
       {/* Projetos */}
+      <Element name="projetos"></Element>
 
       {/* Footer */}
       <Footer />
