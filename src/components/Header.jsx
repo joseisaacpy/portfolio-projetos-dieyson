@@ -1,7 +1,7 @@
 "use client";
 
 // Importa Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Importa image
 import Image from "next/image";
@@ -40,6 +40,21 @@ export function Header() {
   // Estado para controlar a aparição do menu
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // useEffect para controlar o scroll
+  useEffect(() => {
+    // Se menu estiver aberto, ocultar o scroll
+    if (menuOpen) {
+      document.body.classList.add("overflow-hidden");
+      // Se menu estiver fechado, mostrar o scroll
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    // 
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [menuOpen]);
+
   return (
     // Header
     <header>
@@ -51,6 +66,7 @@ export function Header() {
             src={elementoLogo}
             alt="Logo"
             width={70}
+            priority
             className="cursor-pointer simple-hover"
           />
         </Link>
@@ -86,15 +102,17 @@ export function Header() {
       </nav>
 
       <div
-        className={`bg-verde-escuro flex flex-col gap-6 items-center justify-center fixed inset-0 ${
-          menuOpen ? "translate-x-0" : "translate-x-[100%]"
+        className={`bg-black/40 backdrop-blur-2xl flex flex-col gap-6 items-center justify-center fixed inset-0 ${
+          menuOpen ? "opacity-100 " : "opacity-0 pointer-events-none"
         } transition-all duration-500`}
+        onClick={() => setMenuOpen(!menuOpen)}
       >
         {/* Título/Logo */}
         <Image
           src={elementoLogo}
           alt="Logo"
           width={100}
+          priority
           className="cursor-pointer simple-hover"
         />
 
@@ -109,7 +127,7 @@ export function Header() {
                   smooth={true}
                   duration={600}
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="underline cursor-pointer text-lg font-bold text-white hover:text-black transition-all duration-500"
+                  className="underline cursor-pointer text-lg font-bold text-white hover:text-verde-escuro transition-all duration-500"
                 >
                   {link.label}
                 </Link>
