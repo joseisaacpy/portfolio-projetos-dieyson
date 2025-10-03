@@ -54,7 +54,7 @@ export function Header() {
     // Header
     <header>
       {/* Nav */}
-      <nav className="fixed w-full flex justify-around items-center bg-verde-escuro py-4">
+      <nav className="z-50 fixed w-full flex justify-around items-center bg-verde-escuro py-4">
         {/* Logo */}
         <Link to="home" smooth={true} duration={600}>
           <Image
@@ -93,7 +93,7 @@ export function Header() {
           title="Abrir menu"
           className="md:hidden"
         >
-          <HiMenuAlt1 className="text-white text-2xl cursor-pointer simple-hover" />
+          <HiMenuAlt1 className="text-white text-3xl cursor-pointer simple-hover" />
         </button>
       </nav>
 
