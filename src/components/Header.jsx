@@ -46,9 +46,11 @@ export function Header() {
       {/* Nav */}
       <nav className="fixed w-full flex justify-around items-center bg-verde-escuro py-4">
         {/* Logo */}
-        <Link to="/">
+        <Link to="home">
           <Image
             src={elementoLogo}
+            smooth={true}
+            duration={600}
             alt="Logo"
             width={70}
             className="cursor-pointer simple-hover"
@@ -63,6 +65,8 @@ export function Header() {
                 {/* Mudar para to após instalar o react-scroll */}
                 <Link
                   to={link.to}
+                  smooth={true}
+                  duration={600}
                   className="cursor-pointer text-white hover:text-black transition-all duration-500"
                 >
                   {link.label}
@@ -104,6 +108,8 @@ export function Header() {
               <li key={link.label}>
                 <Link
                   to={link.to}
+                  smooth={true}
+                  duration={600}
                   onClick={() => setMenuOpen(!menuOpen)}
                   className="underline cursor-pointer text-lg font-bold text-white hover:text-black transition-all duration-500"
                 >
