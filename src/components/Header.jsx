@@ -46,11 +46,9 @@ export function Header() {
       {/* Nav */}
       <nav className="fixed w-full flex justify-around items-center bg-verde-escuro py-4">
         {/* Logo */}
-        <Link to="home">
+        <Link to="home" smooth={true} duration={600}>
           <Image
             src={elementoLogo}
-            smooth={true}
-            duration={600}
             alt="Logo"
             width={70}
             className="cursor-pointer simple-hover"
