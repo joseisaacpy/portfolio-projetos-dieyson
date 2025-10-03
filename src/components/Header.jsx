@@ -1,17 +1,12 @@
 "use client";
-
 // Importa Hooks
 import { useState, useEffect } from "react";
-
 // Importa image
 import Image from "next/image";
-
 // Importa imagem da logo
 import elementoLogo from "../../public/images/elemento-logo-sem-fundo.png";
-
 // Importa Link
 import { Link } from "react-scroll";
-
 // Importa icon
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdCloseCircle } from "react-icons/io";
@@ -49,7 +44,7 @@ export function Header() {
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-    // 
+    //
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
@@ -79,6 +74,7 @@ export function Header() {
                 {/* Mudar para to após instalar o react-scroll */}
                 <Link
                   to={link.to}
+                  offset={-50}
                   smooth={true}
                   duration={600}
                   className="cursor-pointer text-white hover:text-black transition-all duration-500"
@@ -125,6 +121,7 @@ export function Header() {
                 <Link
                   to={link.to}
                   smooth={true}
+                  offset={-50}
                   duration={600}
                   onClick={() => setMenuOpen(!menuOpen)}
                   className="underline cursor-pointer text-lg font-bold text-white hover:text-verde-escuro transition-all duration-500"
