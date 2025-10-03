@@ -54,7 +54,7 @@ export function Header() {
     // Header
     <header>
       {/* Nav */}
-      <nav className="z-50 fixed w-full flex justify-around items-center bg-verde-escuro py-4">
+      <nav className="z-10 fixed w-full flex justify-around items-center bg-verde-escuro py-4">
         {/* Logo */}
         <Link to="home" smooth={true} duration={600}>
           <Image
@@ -98,7 +98,7 @@ export function Header() {
       </nav>
 
       <div
-        className={`bg-black/40 backdrop-blur-2xl flex flex-col gap-6 items-center justify-center fixed inset-0 ${
+        className={`z-20 bg-black/40 backdrop-blur-2xl flex flex-col gap-6 items-center justify-center fixed inset-0 ${
           menuOpen ? "opacity-100 " : "opacity-0 pointer-events-none"
         } transition-all duration-500`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -124,7 +124,7 @@ export function Header() {
                   offset={-50}
                   duration={600}
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="underline cursor-pointer text-lg font-bold text-white hover:text-verde-escuro transition-all duration-500"
+                  className="underline cursor-pointer text-2xl font-bold text-white hover:text-verde-escuro transition-all duration-500"
                 >
                   {link.label}
                 </Link>
