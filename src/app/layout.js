@@ -1,6 +1,7 @@
 import "./globals.css";
+
 export const metadata = {
-  title: "Portfólio de Dieyson - Excel & Power BI",
+  title: "Insight Data Analisys",
   description:
     "Analista de Dados especialista em Excel e Power BI, criando dashboards interativos e relatórios inteligentes para tomadas de decisão rápidas.",
   authors: [
@@ -10,6 +11,7 @@ export const metadata = {
     },
   ],
   keywords: [
+    "Insight Data Analisys",
     "Excel",
     "Power BI",
     "Dashboard",
@@ -19,7 +21,7 @@ export const metadata = {
   ],
   openGraph: {
     type: "website",
-    title: "Portfólio Dieyson - Excel & Power BI",
+    title: "Insight Data Analisys",
     description:
       "Analista de Dados especialista em Excel e Power BI, criando dashboards interativos e relatórios inteligentes.",
     url: "https://seu-portfolio.com",
@@ -29,13 +31,13 @@ export const metadata = {
         url: "https://seu-portfolio.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Portfólio de Dieyson",
+        alt: "Insight Data Analisys",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfólio de Dieyson - Excel & Power BI",
+    title: "Insight Data Analisys",
     description:
       "Analista de Dados especialista em Excel e Power BI, criando dashboards interativos e relatórios inteligentes.",
     images: ["https://seu-portfolio.com/og-image.png"],
