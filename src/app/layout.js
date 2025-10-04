@@ -61,7 +61,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={"antialiased"}>{children}</body>
+      {/* Body */}
+      <body className={"antialiased"}>
+        {children}
+        {/* Script Umami */}
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="8d9850ed-0807-4f16-85bd-93a80d5db7fe"
+        ></script>
+      </body>
     </html>
   );
 }
