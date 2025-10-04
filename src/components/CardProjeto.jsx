@@ -1,7 +1,7 @@
 // Importa image
 import Image from "next/image";
 // Importa imagem padrão
-import biFallBack from "../../public/images/sem-bi.png";
+import biFallBack from "../../public/images/sem-bi.webp";
 
 export function CardProjeto({
   titulo,
@@ -37,11 +37,11 @@ export function CardProjeto({
         <details className="mt-3 group">
           <summary className="cursor-pointer text-verde-escuro font-semibold flex items-center justify-between select-none border-t border-gray-200 pt-2 transition-all hover:text-verde-padrao">
             Explorações Possíveis
-            <span className="transition-transform group-open:rotate-180 text-gray-400">
+            <span className="transition-all group-open:rotate-180 text-gray-400">
               ▼
             </span>
           </summary>
-          <ul className="flex flex-wrap gap-2 ">
+          <ul className="flex flex-wrap gap-2">
             {palavrasChave.map((palavra, index) => (
               <li
                 key={index}

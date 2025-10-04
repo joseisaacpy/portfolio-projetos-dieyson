@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 // Importa image
 import Image from "next/image";
 // Importa imagem da logo
-import elementoLogo from "../../public/images/logo-completa-sem-fundo-clara.png";
+import elementoLogo from "../../public/images/logo-completa-sem-fundo-clara.webp";
 // Importa Link
 import { Link } from "react-scroll";
 // Importa icon
