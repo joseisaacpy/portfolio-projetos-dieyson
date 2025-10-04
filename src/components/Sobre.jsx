@@ -17,7 +17,7 @@ export function Sobre() {
       style={{ backgroundImage: `url(${fundoTec.src})` }}
     >
       {/* Título */}
-      <h2 className="text-white text-3xl md:text-5xl text-center max-w-3xl md:max-w-4xl font-bold">
+      <h2 className="text-white leading-snug text-3xl md:text-5xl text-center max-w-3xl md:max-w-4xl font-bold">
         Nosso propósito é transformar dados em insights estratégicos
       </h2>
 
@@ -47,7 +47,7 @@ export function Sobre() {
         href="https://wa.me/558699525475"
         target="_blank"
         rel="noopener noreferrer"
-        className="animate-pulse flex items-center justify-center gap-2 bg-verde-escuro/50 text-white font-bold px-6 py-3 rounded-lg hover:bg-verde-escuro transition-all"
+        className="animate-wiggle flex items-center justify-center gap-2 bg-verde-escuro/50 text-white font-bold px-6 py-3 rounded-lg hover:bg-verde-escuro hover:shadow-white transition-all"
       >
         <FaWhatsapp className="text-white text-2xl" /> Entre em contato
       </a>
