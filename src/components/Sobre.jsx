@@ -47,7 +47,7 @@ export function Sobre() {
         href="https://wa.me/558699525475"
         target="_blank"
         rel="noopener noreferrer"
-        className="animate-bounce flex items-center justify-center gap-2 bg-verde-escuro/50 text-white font-bold px-6 py-3 rounded-lg hover:bg-verde-escuro transition-all"
+        className="animate-pulse flex items-center justify-center gap-2 bg-verde-escuro/50 text-white font-bold px-6 py-3 rounded-lg hover:bg-verde-escuro transition-all"
       >
         <FaWhatsapp className="text-white text-2xl" /> Entre em contato
       </a>
