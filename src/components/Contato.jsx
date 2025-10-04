@@ -3,10 +3,22 @@
 // Importa fundo
 import fundoPenta from "../../public/images/fundo-parabolic-pentagon.svg";
 
+// Importa toastify
+import { toast } from "react-toastify";
 // Importa icons
 import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export function Contato() {
+  // Função para copiar o e-mail
+  function conpiarEmail(email) {
+    if (!email || email === "") {
+      toast.error("E-mail ainda não cadastrado.");
+    } else {
+      navigator.clipboard.writeText(email);
+      toast.success("E-mail copiado com sucesso!");
+    }
+  }
+  // Redenriza o componente
   return (
     <section
       className="min-h-screen flex flex-col items-center justify-center bg-cover text-white px-6"
@@ -46,9 +58,12 @@ export function Contato() {
         </a>
 
         {/* Email */}
-        <a className="flex items-center gap-3 text-lg font-medium bg-cinza-medio/30 px-4 py-2 rounded-lg hover:text-blue-400 transition-all">
+        <a
+          className="flex items-center gap-3 cursor-pointer text-lg font-medium bg-cinza-medio/30 px-4 py-2 rounded-lg hover:text-blue-400 transition-all"
+          onClick={() => conpiarEmail("")}
+        >
           <FaEnvelope className="text-3xl text-blue-400" />
-          <span>Email</span>
+          <span>E-mail</span>
         </a>
       </div>
     </section>
