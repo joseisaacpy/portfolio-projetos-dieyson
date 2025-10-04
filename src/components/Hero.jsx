@@ -18,7 +18,7 @@ export function Hero() {
         smooth={true}
         duration={500}
         offset={-50}
-        className="absolute bottom-20 md:bottom-10"
+        className="absolute bottom-40 md:bottom-10"
       >
         {/* Mãozinha */}
         <FaHandPointDown className="text-white text-4xl cursor-pointer font-bold transition-all animate-bounce" />
