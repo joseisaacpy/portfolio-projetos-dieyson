@@ -9,12 +9,17 @@ import { Hero } from "@/components/Hero";
 import { Sobre } from "@/components/Sobre";
 import { Projetos } from "@/components/Projetos";
 import { Footer } from "@/components/Footer";
-import Loading from "@/components/Loading";
+
+// Importa icon do whatsapp
+import { FaWhatsapp } from "react-icons/fa";
+
+// Importa Link
+import Link from "next/link";
 
 // Página Completa com seções/componentes
 export default function Page() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="relative min-h-screen bg-black">
       {/* Header */}
       <Element name="header">
         <Header />
@@ -37,6 +42,16 @@ export default function Page() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Link com icon para o whatsapp */}
+      <Link
+        href="https://wa.me/558699525475"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 bg-verde-escuro p-2 rounded-full text-white simple-hover"
+      >
+        <FaWhatsapp className="text-3xl" />
+      </Link>
     </div>
   );
 }
