@@ -16,29 +16,27 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
-      {/* <Element name="header">
+      <Element name="header">
         <Header />
-      </Element> */}
+      </Element>
 
       {/* Hero */}
-      {/* <Element name="home">
+      <Element name="home">
         <Hero />
-      </Element> */}
+      </Element>
 
       {/* Sobre */}
-      {/* <Element name="sobre">
+      <Element name="sobre">
         <Sobre />
-      </Element> */}
+      </Element>
 
       {/* Projetos */}
-      {/* <Element name="projetos">
+      <Element name="projetos">
         <Projetos />
-      </Element> */}
+      </Element>
 
       {/* Footer */}
-      {/* <Footer /> */}
-
-      <Loading />
+      <Footer />
     </div>
   );
 }
