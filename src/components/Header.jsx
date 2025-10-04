@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 // Importa image
 import Image from "next/image";
 // Importa imagem da logo
-import elementoLogo from "../../public/images/elemento-logo-sem-fundo.png";
+import elementoLogo from "../../public/images/logo-completa-sem-fundo-clara.png";
 // Importa Link
 import { Link } from "react-scroll";
 // Importa icon
@@ -60,7 +60,7 @@ export function Header() {
           <Image
             src={elementoLogo}
             alt="Logo"
-            width={70}
+            width={150}
             priority
             className="cursor-pointer simple-hover"
           />
@@ -98,7 +98,7 @@ export function Header() {
       </nav>
 
       <div
-        className={`z-20 bg-black/40 backdrop-blur-2xl flex flex-col gap-6 items-center justify-center fixed inset-0 ${
+        className={`z-20 bg-black/40 backdrop-blur-2xl flex flex-col gap-8 items-center justify-center fixed inset-0 ${
           menuOpen ? "opacity-100 " : "opacity-0 pointer-events-none"
         } transition-all duration-500`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -107,7 +107,7 @@ export function Header() {
         <Image
           src={elementoLogo}
           alt="Logo"
-          width={100}
+          width={150}
           priority
           className="cursor-pointer simple-hover"
         />
@@ -124,7 +124,7 @@ export function Header() {
                   offset={-50}
                   duration={600}
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="underline cursor-pointer text-2xl font-bold text-white hover:text-verde-escuro transition-all duration-500"
+                  className="underline cursor-pointer text-3xl font-bold text-white hover:text-verde-escuro transition-all duration-500"
                 >
                   {link.label}
                 </Link>
@@ -138,7 +138,7 @@ export function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="cursor-pointer simple-hover"
         >
-          <IoMdCloseCircle className="text-white text-3xl" />
+          <IoMdCloseCircle className="text-white text-5xl" />
         </button>
       </div>
     </header>
