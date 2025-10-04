@@ -22,6 +22,7 @@ export function Projetos() {
               descricao={projeto.descricao}
               linkDemo={projeto.linkDemo}
               imagem={projeto.imagem}
+              palavrasChave={projeto.palavrasChave}
             />
           ))}
         </div>
