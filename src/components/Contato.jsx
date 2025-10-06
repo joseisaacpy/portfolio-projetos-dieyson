@@ -60,7 +60,7 @@ export function Contato() {
         {/* Email */}
         <a
           className="flex items-center gap-3 cursor-pointer text-xl justify-center font-medium bg-cinza-medio/30 px-4 py-2 rounded-lg hover:text-blue-400 transition-all"
-          onClick={() => conpiarEmail("")}
+          onClick={() => conpiarEmail("insigth.contatoadm@gmail.com")}
         >
           <FaEnvelope className="text-3xl text-blue-400" />
           <span>E-mail</span>
