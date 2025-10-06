@@ -2,6 +2,10 @@
 
 // Importa Element do Scrool
 import { Element } from "react-scroll";
+
+// Importa Hooks
+import { useState } from "react";
+
 // Importa Toastify
 import { ToastContainer } from "react-toastify";
 
@@ -11,6 +15,8 @@ import { Hero } from "@/components/Hero";
 import { Sobre } from "@/components/Sobre";
 import { Projetos } from "@/components/Projetos";
 import { Contato } from "@/components/Contato";
+import { SectionVideo } from "@/components/SectionVideo";
+import { Manutencao } from "@/components/Manutencao";
 import { Footer } from "@/components/Footer";
 
 // Importa icon do whatsapp
@@ -18,6 +24,12 @@ import { FaWhatsapp } from "react-icons/fa";
 
 // Página Completa com seções/componentes
 export default function Page() {
+  const [manutencao, setManutencao] = useState(true);
+
+  if (manutencao) {
+    return <Manutencao />;
+  }
+
   return (
     <div className="relative min-h-screen bg-black">
       {/* Header */}
@@ -34,6 +46,9 @@ export default function Page() {
       <Element name="sobre">
         <Sobre />
       </Element>
+
+      {/* Seção de Video */}
+      <SectionVideo />
 
       {/* Projetos */}
       <Element name="projetos">
