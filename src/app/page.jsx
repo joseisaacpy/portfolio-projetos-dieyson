@@ -1,10 +1,14 @@
 "use client";
 
+// Importa o AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Importa Element do Scrool
 import { Element } from "react-scroll";
 
 // Importa Hooks
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Importa Toastify
 import { ToastContainer } from "react-toastify";
@@ -29,6 +33,15 @@ export default function Page() {
   if (manutencao) {
     return <Manutencao />;
   }
+
+  useEffect(() => {
+    // Configura o AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <div className="relative min-h-screen bg-black">

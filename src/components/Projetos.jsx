@@ -7,7 +7,10 @@ import { CardProjeto } from "./CardProjeto";
 export function Projetos() {
   return (
     // Section
-    <section className="bg-gradient-to-b from-verde-padrao to-verde-escuro py-16 px-6">
+    <section
+      id="projetos"
+      className="bg-linear-to-b from-verde-padrao to-verde-escuro py-16 px-6"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Título */}
         <h2 className="text-4xl font-bold text-center text-white mb-8">

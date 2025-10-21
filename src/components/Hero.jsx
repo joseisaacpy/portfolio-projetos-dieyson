@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 export function Hero() {
   return (
-    <section className="min-h-screen relative flex flex-col items-center justify-center bg-gradient-to-b from-black via-verde-escuro/50 to-black">
+    <section className="min-h-screen relative flex flex-col items-center justify-center  bg-linear-to-b from-black via-verde-escuro/50 to-black">
       {/* Textos */}
       <h1 className="animate-wiggle text-3xl text-center font-bold leading-snug text-white md:text-5xl max-w-3xl">
         Transformamos <span className="text-verde-padrao">dados</span> em

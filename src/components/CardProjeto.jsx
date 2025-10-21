@@ -1,3 +1,4 @@
+"use client";
 // Importa image
 import Image from "next/image";
 // Importa imagem padrão
@@ -9,10 +10,16 @@ export function CardProjeto({
   linkDemo,
   imagem,
   palavrasChave,
+  unico = false,
 }) {
   return (
     // Div do card
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg flex flex-col justify-between h-full gap-1 transition-all ease-in-out duration-300 hover:scale-95">
+    <div
+      data-aos="fade-up"
+      className={`bg-white rounded-xl shadow-md hover:shadow-lg flex flex-col ${
+        unico ? "justify-baseline" : "justify-between h-full"
+      }  gap-1 transition-all ease-in-out duration-300 hover:scale-95`}
+    >
       {/* Imagem do projeto e se não tiver imagem, mostra uma imagem padrão */}
       <Image
         src={imagem || biFallBack}

@@ -17,27 +17,46 @@ export function Sobre() {
       style={{ backgroundImage: `url(${fundoTec.src})` }}
     >
       {/* Título */}
-      <h2 className="text-white leading-snug text-3xl md:text-5xl text-center max-w-3xl md:max-w-4xl font-bold">
+      <h2
+        data-aos="fade-down"
+        className="text-white leading-snug text-3xl md:text-5xl text-center max-w-3xl md:max-w-4xl font-bold"
+      >
         Nosso propósito é transformar dados em insights estratégicos
       </h2>
 
       {/* Descrição */}
-      <p className="text-gray-200 max-w-3xl text-center">
+      <p
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="text-gray-200 max-w-3xl text-center"
+      >
         Criamos dashboards, planilhas e análises que apoiam decisões
         estratégicas e geram valor real para o seu negócio.
       </p>
 
       {/* Benefícios / diferenciais */}
       <ul className="flex flex-col md:flex-row flex-wrap justify-center gap-3 my-4">
-        <li className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2">
+        <li
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2"
+        >
           <HiOutlineChartBar className="text-verde-escuro text-2xl" />{" "}
           Dashboards BI’s claros e interativos
         </li>
-        <li className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2">
+        <li
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2"
+        >
           <HiOutlineChartSquareBar className="text-verde-escuro text-2xl" />{" "}
           Análises de dados precisas para decisões assertivas
         </li>
-        <li className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2">
+        <li
+          data-aos="fade-up"
+          data-aos-delay="800"
+          className="bg-white/10 text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2"
+        >
           <HiOutlineChartPie className="text-verde-escuro text-2xl" />{" "}
           Transformamos dados em insights acionáveis
         </li>

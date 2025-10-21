@@ -1,6 +1,7 @@
 export const projetos = [
   {
     titulo: "Dashboard de Produção e Operações",
+    slug: "dashboard-producao-operacoes",
     descricao:
       "Controla eficiência operacional, produtividade e gargalos no processo produtivo.",
     imagem: "",
@@ -15,6 +16,7 @@ export const projetos = [
   },
   {
     titulo: "Dashboard de Marketing e Mídias Digitais",
+    slug: "dashboard-marketing-midias-digitais",
     descricao:
       "Analisa desempenho de campanhas, redes sociais e funil de marketing digital.",
     imagem: "",
@@ -29,6 +31,7 @@ export const projetos = [
   },
   {
     titulo: "Dashboard de Saúde – Gestão de Atendimentos",
+    slug: "dashboard-saude-gestao-atendimentos",
     descricao:
       "Voltado a hospitais ou clínicas para acompanhar a operação e qualidade dos atendimentos.",
     imagem: "",
@@ -43,6 +46,7 @@ export const projetos = [
   },
   {
     titulo: "Dashboard Financeiro – Desempenho da Empresa",
+    slug: "dashboard-financeiro-desempenho-empresa",
     descricao:
       "Monitora a saúde financeira do negócio em tempo real, reunindo receitas, despesas e lucros.",
     imagem: "",
@@ -57,6 +61,7 @@ export const projetos = [
   },
   {
     titulo: "Dashboard de Vendas e Comercial",
+    slug: "dashboard-vendas-comercial",
     descricao:
       "Painel voltado à análise de performance das vendas, metas e comportamento dos clientes.",
     imagem: "",
@@ -71,6 +76,7 @@ export const projetos = [
   },
   {
     titulo: "Dashboard de Recursos Humanos – Indicadores de Pessoas",
+    slug: "dashboard-recursos-humanos",
     descricao:
       "Centraliza indicadores de gestão de pessoas e clima organizacional.",
     imagem: "",

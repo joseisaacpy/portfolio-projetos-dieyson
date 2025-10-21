@@ -25,16 +25,22 @@ export function Contato() {
       style={{ backgroundImage: `url(${fundoPenta.src})` }}
     >
       {/* Título */}
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+      <h1
+        data-aos="fade-right"
+        className="text-4xl md:text-5xl font-bold mb-6 text-center"
+      >
         Fale conosco!
       </h1>
-      <p className="text-center text-lg mb-12 max-w-md">
+      <p data-aos="fade-left" className="text-center text-lg mb-12 max-w-md">
         Escolha o canal que preferir e entre em contato. Respondo o mais rápido
         possível.
       </p>
 
       {/* Ícones de contato */}
-      <div className="flex flex-col gap-6 md:flex-row md:gap-12">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col gap-6 md:flex-row md:gap-12"
+      >
         {/* WhatsApp */}
         <a
           href="https://wa.me/558699525475"
