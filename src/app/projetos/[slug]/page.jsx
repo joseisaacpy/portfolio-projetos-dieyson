@@ -42,7 +42,6 @@ export default function ProjetoPage({ params }) {
         palavrasChave={projeto.palavrasChave}
       />
       {/* Botão de voltar */}
-      {/* Botão de voltar */}
       <button className=" bg-verde-escuro text-white px-6 py-3 rounded-md">
         <Link href="/#projetos">Voltar</Link>
       </button>
