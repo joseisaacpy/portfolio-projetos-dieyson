@@ -26,12 +26,12 @@ export function Contato() {
     >
       {/* Título */}
       <h1
-        data-aos="fade-right"
+        data-aos="fade-up"
         className="text-4xl md:text-5xl font-bold mb-6 text-center"
       >
         Fale conosco!
       </h1>
-      <p data-aos="fade-left" className="text-center text-lg mb-12 max-w-md">
+      <p data-aos="fade-down" className="text-center text-lg mb-12 max-w-md">
         Escolha o canal que preferir e entre em contato. Respondo o mais rápido
         possível.
       </p>
